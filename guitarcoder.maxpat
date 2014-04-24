@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 762.0, 229.0, 863.0, 624.0 ],
+		"rect" : [ 964.0, 57.0, 863.0, 541.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -77,7 +77,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 140.0, 68.0, 50.0, 20.0 ]
+					"patching_rect" : [ 141.0, 68.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -97,27 +97,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "ezadc~",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 113.25, 10.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 575.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
@@ -126,8 +105,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.5, 286.0, 334.0, 186.0 ],
-					"text" : "semitones - number of divisions per octave\n\nroot - lowest band in Hz\n\neven/odd Q - to resonant filter on even/odd harmonics for resynthesis\n\neven/odd xpose - transpose for resynthesis\n\npan rate/width - random pan controls for resynthesis\n\nwiggle - detector interpolation when 0, auto-tune when 0. wiggly sounds when > 1"
+					"patching_rect" : [ 515.5, 183.0, 334.0, 186.0 ],
+					"text" : "semitones - number of divisions per octave\n\nroot - lowest band in Hz\n\neven/odd Q - to resonant filter on even/odd harmonics for resynthesis\n\neven/odd xpose - transpose for resynthesis\n\npan rate/width - random pan controls for resynthesis\n\nwiggle - detector interpolation when 1, auto-tune when 0. wiggly sounds when > 1"
 				}
 
 			}
@@ -141,7 +120,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.5, 174.0, 334.0, 62.0 ],
+					"patching_rect" : [ 528.5, 120.0, 334.0, 62.0 ],
 					"text" : "poly~ based channel vocoder optimized for electric guitar. inefficient, would like to redesign as an external or gen~ patcher. Attempts to detect each partial of the input signal and resynthesize with different waveforms."
 				}
 
@@ -155,7 +134,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 544.0, 150.0, 20.0 ],
+					"patching_rect" : [ 3.5, 492.0, 150.0, 20.0 ],
 					"text" : "left,     right,     mono"
 				}
 
@@ -200,8 +179,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.25, 10.0, 25.0, 25.0 ]
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 102.25, 0.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -357,7 +336,7 @@
 					"patching_rect" : [ 3.5, 313.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[2]",
+							"parameter_longname" : "live.gain~[10]",
 							"parameter_shortname" : "live.gain~[2]",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -383,7 +362,7 @@
 					"patching_rect" : [ 59.25, 313.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[1]",
+							"parameter_longname" : "live.gain~[11]",
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -409,7 +388,7 @@
 					"patching_rect" : [ 11.25, 39.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
+							"parameter_longname" : "live.gain~[12]",
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -693,7 +672,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 183.0, 489.0, 300.0, 100.0 ]
+					"patching_rect" : [ 508.071411, 372.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -965,15 +944,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1010,28 +980,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -1055,7 +1007,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-55", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
@@ -1412,41 +1364,6 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
-			}
- ],
-		"parameters" : 		{
-			"obj-21" : [ "live.gain~[2]", "live.gain~[2]", 0 ],
-			"obj-9" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-19" : [ "live.gain~[1]", "live.gain~", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "guitarcoderband.maxpat",
-				"bootpath" : "/Users/Victor/Documents/GitHub/max-patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "guitarcoderdetector.maxpat",
-				"bootpath" : "/Users/Victor/Documents/GitHub/max-patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mixccs.maxpat",
-				"bootpath" : "/Users/Victor/Documents/GitHub/max-patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keyskeys.maxpat",
-				"bootpath" : "/Program Files (x86)/Cycling '74/Max 6.1/examples/jitter-examples/3rd_Party/JitterApplets/SimpleMix.lib",
-				"patcherrelativepath" : "../../../../../Program Files (x86)/Cycling '74/Max 6.1/examples/jitter-examples/3rd_Party/JitterApplets/SimpleMix.lib",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}
